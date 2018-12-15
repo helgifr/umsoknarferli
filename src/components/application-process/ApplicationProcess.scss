@@ -1,0 +1,27 @@
+.card {
+  &.error {
+    border-color: #dc3545;
+  }
+  &.success {
+    border-color: #28a745;
+  }
+}
+
+.history {
+  margin-bottom: 1rem;
+  > .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  > .card-body p {
+    margin: 0;
+  }
+}
+
+.process-options, .process-operation {
+  .btn {
+    margin-bottom: 1rem;
+    display: block;
+  }
+}

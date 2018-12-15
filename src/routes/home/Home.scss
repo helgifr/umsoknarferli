@@ -1,0 +1,9 @@
+.home {
+  max-width: 800px;
+  text-align: center;
+  margin: 1rem auto;
+
+  @media screen and (max-width: 799px) {
+    margin: auto 1rem;
+  }
+}

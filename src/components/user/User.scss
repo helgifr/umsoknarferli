@@ -1,0 +1,14 @@
+.user__nav-item {
+  display: block;
+  padding: .5rem 0;
+  color: #eee;
+  @media screen and (min-width: 768px) {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.9;
+  }
+}
