@@ -32,24 +32,24 @@ class Header extends Component {
 
     return (
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand tag={RRNavLink} to={`${basename}/`}>
+        <NavbarBrand tag={RRNavLink} to="/">
           Umsóknarferli
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
         <Nav navbar>
           <NavItem>
-            <NavLink tag={RRNavLink} to={`${basename}/diagram`}>
+            <NavLink tag={RRNavLink} to="/diagram">
               Diagram
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={RRNavLink} to={`${basename}/new`}>
+            <NavLink tag={RRNavLink} to="/new">
               Ný umsókn
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={RRNavLink} to={`${basename}/applications`}>Breyta umsóknir</NavLink>
+            <NavLink tag={RRNavLink} to="/applications">Breyta umsóknir</NavLink>
           </NavItem>
           </Nav>
           <Nav className="ml-auto" navbar>
@@ -59,7 +59,7 @@ class Header extends Component {
 
             {!auth.isAuthenticated && (
               <NavItem>
-                <NavLink tag={RRNavLink} to={`${basename}/login`}>
+                <NavLink tag={RRNavLink} to="/login">
                   <Button color="primary">Innskráning</Button>
                 </NavLink>
               </NavItem>
