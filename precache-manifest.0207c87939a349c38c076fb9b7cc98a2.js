@@ -8,23 +8,23 @@ self.__precacheManifest = [
     "url": "/umsoknarferli/static/js/runtime~main.6a4c7c50.js"
   },
   {
-    "revision": "bcfb39a48d06c94c19fa",
-    "url": "/umsoknarferli/static/js/main.bcfb39a4.chunk.js"
+    "revision": "8e0d1b7631d355deabd7",
+    "url": "/umsoknarferli/static/js/main.8e0d1b76.chunk.js"
   },
   {
-    "revision": "b863b19d2a682f5ccdb1",
-    "url": "/umsoknarferli/static/js/1.b863b19d.chunk.js"
+    "revision": "372372b12bf1e6b24011",
+    "url": "/umsoknarferli/static/js/1.372372b1.chunk.js"
   },
   {
-    "revision": "bcfb39a48d06c94c19fa",
-    "url": "/umsoknarferli/static/css/main.3e00c6fc.chunk.css"
+    "revision": "8e0d1b7631d355deabd7",
+    "url": "/umsoknarferli/static/css/main.cce24891.chunk.css"
   },
   {
-    "revision": "b863b19d2a682f5ccdb1",
+    "revision": "372372b12bf1e6b24011",
     "url": "/umsoknarferli/static/css/1.3763efcd.chunk.css"
   },
   {
-    "revision": "ac37d30102cb7de551ba6516ac87e853",
+    "revision": "504bf5f06fe0828a3f3b492eaf740171",
     "url": "/umsoknarferli/index.html"
   }
 ];
