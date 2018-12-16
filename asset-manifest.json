@@ -1,7 +1,7 @@
 {
   "main.css": "/umsoknarferli/static/css/main.32c3120d.chunk.css",
-  "main.js": "/umsoknarferli/static/js/main.b2fa4ab7.chunk.js",
-  "main.js.map": "/umsoknarferli/static/js/main.b2fa4ab7.chunk.js.map",
+  "main.js": "/umsoknarferli/static/js/main.626ad653.chunk.js",
+  "main.js.map": "/umsoknarferli/static/js/main.626ad653.chunk.js.map",
   "static/css/1.6489497e.chunk.css": "/umsoknarferli/static/css/1.6489497e.chunk.css",
   "static/js/1.c49a0b30.chunk.js": "/umsoknarferli/static/js/1.c49a0b30.chunk.js",
   "static/js/1.c49a0b30.chunk.js.map": "/umsoknarferli/static/js/1.c49a0b30.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/homeText.md": "/umsoknarferli/static/media/homeText.5225d8d2.md",
   "static/css/main.32c3120d.chunk.css.map": "/umsoknarferli/static/css/main.32c3120d.chunk.css.map",
   "index.html": "/umsoknarferli/index.html",
-  "precache-manifest.52c9261b4aa874bdc6dc31c769f362ff.js": "/umsoknarferli/precache-manifest.52c9261b4aa874bdc6dc31c769f362ff.js",
+  "precache-manifest.af34fcb139faa0fecf9a96271804c8b8.js": "/umsoknarferli/precache-manifest.af34fcb139faa0fecf9a96271804c8b8.js",
   "service-worker.js": "/umsoknarferli/service-worker.js"
 }
