@@ -17,8 +17,6 @@ import User from '../user';
 
 import './Header.css';
 
-const basename = process.env.PUBLIC_URL;
-
 class Header extends Component {
 
   state = { isOpen: false };

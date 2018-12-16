@@ -75,33 +75,35 @@ class Diagram extends Component {
     const { nodes, links } = calcSankey(filteredData);
 
     return (
-      <div className="diagram-wrapper">
-        <ResponsiveSankey
-          data={{ nodes, links }}
-          margin={{
-            "top": 40,
-            "right": 160,
-            "bottom": 40,
-            "left": 50
-          }}
-          align="justify"
-          colors="category10"
-          nodeOpacity={1}
-          nodeWidth={18}
-          nodeBorderColor="inherit:darker(0.8)"
-          linkHoverOthersOpacity={0.1}
-          labelPosition="outside"
-          labelOrientation="vertical"
-          labelPadding={16}
-          labelTextColor="inherit:darker(1)"
-          enableLabels
-          labelFormat={(id) => { // Skilar label í stað id
-            const { label } = nodes.find(el => el.id === id);
-            return label;
-          }}
-          motionStiffness={120}
-          motionDamping={11}
-        />
+      <div className="diagram-component">
+        <div className="diagram-wrapper">
+          <ResponsiveSankey
+            data={{ nodes, links }}
+            margin={{
+              "top": 40,
+              "right": 60,
+              "bottom": 40,
+              "left": 60
+            }}
+            align="justify"
+            colors="category10"
+            nodeOpacity={1}
+            nodeWidth={18}
+            linkHoverOpacity={0.5}
+            nodeBorderColor="inherit:darker(0.8)"
+            labelPosition="outside"
+            labelOrientation="vertical"
+            labelPadding={16}
+            labelTextColor="inherit:darker(1)"
+            enableLabels
+            labelFormat={(id) => { // Skilar label í stað id
+              const { label } = nodes.find(el => el.id === id);
+              return label;
+            }}
+            motionStiffness={120}
+            motionDamping={11}
+          />
+        </div>
         {this.dateRangePicker(selectionRange)}
       </div>
     );

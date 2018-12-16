@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import update from 'react-addons-update';
+import { Link } from 'react-router-dom';
 
 import api from '../../api';
 
@@ -36,6 +37,8 @@ import 'moment/locale/is';
 
 import 'react-day-picker/lib/style.css'
 import './EditApplications.scss';
+
+const basename = process.env.PUBLIC_URL;
 
 class EditApplications extends Component {
 
@@ -157,6 +160,20 @@ class EditApplications extends Component {
     if (loading) return (<Loading />);
 
     if (error) return (<h1>An error occurred</h1>);
+
+    if (!applications || applications.length === 0) {
+      return (
+        <div className="no-applications">
+          <h2>Engar umsóknir í gagnagrunni</h2>
+          <h3>Til að nota töflu þarf að vera með a.m.k eina umsókn í gagnagrunni</h3>
+          <Link to={`${basename}/new`}>
+            <Button color="primary" size="lg">
+              Ný umsókn
+            </Button>
+          </Link>
+        </div>
+      );
+    }
 
     const sortedApplications = applications
       .map((application, index) => ({ application, index }));

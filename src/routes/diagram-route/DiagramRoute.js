@@ -42,10 +42,10 @@ class DiagramRoute extends Component {
 
     return (
       <div className="diagram">
-        {applications &&
+        {applications && applications.length > 0 &&
           <Diagram data={applications} />
         }
-        {!applications && (
+        {(!applications || applications.length === 0) && (
           <div className="no-applications">
             <h2>Engar umsóknir í gagnagrunni</h2>
             <h3>Til að nota töflu þarf að vera með a.m.k eina umsókn í gagnagrunni</h3>

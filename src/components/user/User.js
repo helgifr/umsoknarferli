@@ -21,7 +21,7 @@ class User extends Component {
     return (
       <React.Fragment>
         <NavItem className="user__nav-item"><p>Skráð/ur inn sem: <strong>{name}</strong></p></NavItem>
-        <NavItem className="user__nav-item"><Button color="danger" size="sm" onClick={this.handleLogout}>Logout</Button></NavItem>
+        <NavItem className="user__nav-item"><Button color="danger" size="sm" onClick={this.handleLogout}>Útskrá</Button></NavItem>
       </React.Fragment>
     );
   }

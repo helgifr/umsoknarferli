@@ -12,6 +12,7 @@ import Register from './routes/register';
 import Login from './routes/login';
 import NewApplication from './routes/new-application';
 import EditApplications from './routes/edit-applications';
+import NotFound from './routes/not-found';
 
 import './App.css';
 
@@ -32,6 +33,7 @@ class App extends Component {
             <Route path="/login" exact component={Login} />
             <UserRoute path="/new" exact authenticated={isAuthenticated} component={NewApplication} />
             <UserRoute path="/applications" exact authenticated={isAuthenticated} component={EditApplications} />
+            <Route component={NotFound} />
           </Switch>
         </div>
       </main>

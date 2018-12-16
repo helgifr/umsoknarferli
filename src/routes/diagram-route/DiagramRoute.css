@@ -1,13 +1,11 @@
 .diagram {
   margin: auto;
-  width: 1000px;
-  height: 800px;
+  max-width: 1000px;
 }
 
 .no-applications {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

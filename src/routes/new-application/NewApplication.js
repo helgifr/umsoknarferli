@@ -28,6 +28,8 @@ export default class NewApplication extends Component {
     errors: [],
   }
 
+  timerID = null;
+
   finishState = finishedState => {
     this.setState({ process: finishedState });
   }
@@ -56,8 +58,12 @@ export default class NewApplication extends Component {
     
     if (post.status === 201) {
       this.setState({ loading: false, registered: true });
-      setTimeout(() => this.setState({ registered: false }), 4000);
+      this.timerID = setTimeout(() => this.setState({ registered: false }), 4000);
     }
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
   }
 
   render() {
