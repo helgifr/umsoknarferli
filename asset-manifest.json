@@ -1,7 +1,7 @@
 {
-  "main.css": "/umsoknarferli/static/css/main.32c3120d.chunk.css",
-  "main.js": "/umsoknarferli/static/js/main.626ad653.chunk.js",
-  "main.js.map": "/umsoknarferli/static/js/main.626ad653.chunk.js.map",
+  "main.css": "/umsoknarferli/static/css/main.f836b16c.chunk.css",
+  "main.js": "/umsoknarferli/static/js/main.68439c09.chunk.js",
+  "main.js.map": "/umsoknarferli/static/js/main.68439c09.chunk.js.map",
   "static/css/1.6489497e.chunk.css": "/umsoknarferli/static/css/1.6489497e.chunk.css",
   "static/js/1.c49a0b30.chunk.js": "/umsoknarferli/static/js/1.c49a0b30.chunk.js",
   "static/js/1.c49a0b30.chunk.js.map": "/umsoknarferli/static/js/1.c49a0b30.chunk.js.map",
@@ -9,8 +9,8 @@
   "runtime~main.js.map": "/umsoknarferli/static/js/runtime~main.6a4c7c50.js.map",
   "static/css/1.6489497e.chunk.css.map": "/umsoknarferli/static/css/1.6489497e.chunk.css.map",
   "static/media/homeText.md": "/umsoknarferli/static/media/homeText.5225d8d2.md",
-  "static/css/main.32c3120d.chunk.css.map": "/umsoknarferli/static/css/main.32c3120d.chunk.css.map",
+  "static/css/main.f836b16c.chunk.css.map": "/umsoknarferli/static/css/main.f836b16c.chunk.css.map",
   "index.html": "/umsoknarferli/index.html",
-  "precache-manifest.af34fcb139faa0fecf9a96271804c8b8.js": "/umsoknarferli/precache-manifest.af34fcb139faa0fecf9a96271804c8b8.js",
+  "precache-manifest.eede426036262fee433f0b5eb2587fb7.js": "/umsoknarferli/precache-manifest.eede426036262fee433f0b5eb2587fb7.js",
   "service-worker.js": "/umsoknarferli/service-worker.js"
 }
