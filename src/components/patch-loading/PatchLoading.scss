@@ -24,7 +24,7 @@ $error-color: $brand-failed;
 .load-complete {
   -webkit-animation: none;
   animation: none;
-  border-color: $error-color;
+  border-color: $check-color;
   transition: border 500ms ease-out;
 }
 

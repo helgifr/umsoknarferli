@@ -8,6 +8,10 @@ class PatchLoading extends Component {
 
   displayTimer = null;
 
+  componentWillUnmount() {
+    clearTimeout(this.displayTimer);
+  }
+
   render() {
     const { display } = this.state;
     const { state = 'false' } = this.props;
