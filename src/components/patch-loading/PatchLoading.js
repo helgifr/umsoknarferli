@@ -26,7 +26,7 @@ class PatchLoading extends Component {
       case 'done':
         if (display) {
           loadClasses += ' load-complete';
-          checkmarkClasses += 'draw checkmark-display';
+          checkmarkClasses = checkmarkClasses.replace('error', ' draw checkmark-display');
         } else {
           return null;
         }
