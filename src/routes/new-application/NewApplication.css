@@ -1,4 +1,4 @@
-div.alert-success {
+.alert-success {
   position: relative;
   z-index: -1;
   top: -30px;
@@ -21,4 +21,5 @@ div.alert-success {
 
 .register {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
