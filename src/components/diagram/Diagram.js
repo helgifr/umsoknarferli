@@ -12,6 +12,20 @@ import Loading from '../../components/loading';
 
 import './Diagram.css';
 
+const DateRange = props => {
+  const { selectionRange, minDate, maxDate, handler } = props;
+  return (
+    <DateRangePicker
+        ranges={[selectionRange]}
+        minDate={new Date(minDate)}
+        maxDate={new Date(maxDate)}
+        onChange={handler}
+        months={2}
+        direction="horizontal"
+      />
+);
+}
+
 class Diagram extends Component {
 
   state = {
@@ -42,7 +56,7 @@ class Diagram extends Component {
     return (
       <div className="diagram-wrapper">
         <h2 className="diagram__no-data">Engar umsóknir</h2>
-        {this.dateRangePicker(selectionRange)}
+        <DateRange selectionRange={selectionRange} />
       </div>
     );
   }
@@ -61,7 +75,7 @@ class Diagram extends Component {
   }
 
   render() {
-    const { selectionRange } = this.state;
+    const { selectionRange, maxDate, minDate } = this.state;
 
     if (!selectionRange) return (<Loading />);
 
@@ -70,7 +84,19 @@ class Diagram extends Component {
 
     const filteredData = data.filter(el => new Date(el.date) >= startDate && new Date(el.date) <= endDate);
 
-    if (filteredData.length === 0) return this.noApplications(selectionRange);
+    if (filteredData.length === 0) {
+      return (
+        <div className="diagram-wrapper">
+          <h2 className="diagram__no-data">Engar umsóknir</h2>
+          <DateRange
+            selectionRange={selectionRange}
+            minDate={minDate}
+            maxDate={maxDate}
+            handler={this.handler}
+          />
+        </div>
+      );
+    }
 
     const { nodes, links } = calcSankey(filteredData);
 
@@ -104,7 +130,12 @@ class Diagram extends Component {
             motionDamping={11}
           />
         </div>
-        {this.dateRangePicker(selectionRange)}
+        <DateRange
+          selectionRange={selectionRange}
+          minDate={minDate}
+          maxDate={maxDate}
+          handler={this.handler}
+        />
       </div>
     );
   }

@@ -73,12 +73,20 @@ class EditApplications extends Component {
   }
 
   handleEnter = e => {
+    /*
     if (e.key === 'Enter') {
       e.preventDefault();
       const { name, value } = e.target;
       const [index, key] = name.split('.');
       this.patch(index, { [key]: value });
-    }
+    }*/
+  }
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const { id } = e.target;
+    const { applications } = this.state;
+    this.patch(id, applications[id]);
   }
 
   handleDayChange = async (selectedDay, modifiers, dayPickerInput) => {
@@ -100,6 +108,7 @@ class EditApplications extends Component {
       this.setState({ patching });
 
       const result = await api.patch(url, data);
+
       if (result.status >= 400) {
         patching[index] = 'failed';
       } else {
@@ -195,7 +204,7 @@ class EditApplications extends Component {
         <Row>
           {sortedApplications.map(({ index, application }) => (
             <Col key={index} className="application-col" md={12} lg={6} xl={4}>
-              <form id={index}>
+              <form id={index} onSubmit={this.handleSubmit}>
                 <Card className="application-section">
                   <CardHeader>
                     <h4>
@@ -244,6 +253,7 @@ class EditApplications extends Component {
                   </CardFooter>
                   <span tabIndex="0" name={`${index}.delete`} className="delete" onClick={() => this.deleteClick(index)} />
                 </Card>
+                <button type="submit" />
               </form>
               <PatchLoading state={patching[index]} />
             </Col>

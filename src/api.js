@@ -1,4 +1,5 @@
 const baseurl = process.env.REACT_APP_SERVICE_URL;
+const publicUrl = process.env.PUBLIC_URL;
 
 async function request(method, endpoint, data, file = false) {
   const url = `${baseurl}${endpoint}`;
@@ -45,7 +46,7 @@ async function request(method, endpoint, data, file = false) {
   if (response.status === 401 && result.error && token) {
     window.localStorage.removeItem('token');
     window.localStorage.removeItem('user');
-    window.location = '/login?tokenExpired';
+    window.location = `${publicUrl}/login?tokenExpired`;
     throw Error('token expired');
   }
 
