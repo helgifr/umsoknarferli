@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Diagram component matches the snapshot with data 1`] = `
+<div
+  className="diagram-component"
+>
+  <div
+    className="diagram-wrapper"
+  >
+    <ResponsiveSankey
+      align="justify"
+      colors="category10"
+      data={
+        Object {
+          "links": Array [
+            Object {
+              "source": "Vettvangur",
+              "target": "Vefforritari",
+              "value": 1,
+            },
+            Object {
+              "source": "Advania",
+              "target": "Framendaforritari",
+              "value": 1,
+            },
+            Object {
+              "source": "Origo",
+              "target": "Vefforritari",
+              "value": 1,
+            },
+            Object {
+              "source": "Vefforritari",
+              "target": "Bið-athugun",
+              "value": 1,
+            },
+            Object {
+              "source": "Framendaforritari",
+              "target": "Viðtal",
+              "value": 1,
+            },
+            Object {
+              "source": "Vefforritari",
+              "target": "Viðtal",
+              "value": 1,
+            },
+            Object {
+              "source": "Viðtal",
+              "target": "Annað-viðtal",
+              "value": 1,
+            },
+            Object {
+              "source": "Annað-viðtal",
+              "target": "Neitun",
+              "value": 1,
+            },
+          ],
+          "nodes": Array [
+            Object {
+              "id": "Vettvangur",
+              "label": "Vettvangur",
+              "name": "Vettvangur",
+            },
+            Object {
+              "id": "Advania",
+              "label": "Advania",
+              "name": "Advania",
+            },
+            Object {
+              "id": "Origo",
+              "label": "Origo",
+              "name": "Origo",
+            },
+            Object {
+              "id": "Vefforritari",
+              "label": "Vefforritari",
+              "name": "Vefforritari",
+            },
+            Object {
+              "id": "Framendaforritari",
+              "label": "Framendaforritari",
+              "name": "Framendaforritari",
+            },
+            Object {
+              "id": "Bið-athugun",
+              "label": "Bið athugun",
+              "name": "Bið-athugun",
+            },
+            Object {
+              "id": "Viðtal",
+              "label": "Viðtal",
+              "name": "Viðtal",
+            },
+            Object {
+              "id": "Annað-viðtal",
+              "label": "Annað viðtal",
+              "name": "Annað-viðtal",
+            },
+            Object {
+              "id": "Neitun",
+              "label": "Neitun",
+              "name": "Neitun",
+            },
+          ],
+        }
+      }
+      enableLabels={true}
+      labelFormat={[Function]}
+      labelOrientation="vertical"
+      labelPadding={16}
+      labelPosition="outside"
+      labelTextColor="inherit:darker(1)"
+      linkHoverOpacity={0.5}
+      margin={
+        Object {
+          "bottom": 40,
+          "left": 60,
+          "right": 60,
+          "top": 40,
+        }
+      }
+      motionDamping={11}
+      motionStiffness={120}
+      nodeBorderColor="inherit:darker(0.8)"
+      nodeOpacity={1}
+      nodeWidth={18}
+    />
+  </div>
+  <DateRange
+    handler={[Function]}
+    maxDate={2018-11-16T00:00:00.000Z}
+    minDate={2018-11-10T00:00:00.000Z}
+    selectionRange={
+      Object {
+        "endDate": 2018-11-16T00:00:00.000Z,
+        "key": "selectionRange",
+        "startDate": 2018-11-10T00:00:00.000Z,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Diagram component matches the snapshot without data 1`] = `
+<div
+  className="diagram-wrapper"
+>
+  <h2
+    className="diagram__no-data"
+  >
+    Engar umsóknir
+  </h2>
+  <DateRange
+    handler={[Function]}
+    maxDate={Date { NaN }}
+    minDate={Date { NaN }}
+    selectionRange={
+      Object {
+        "endDate": Date { NaN },
+        "key": "selectionRange",
+        "startDate": Date { NaN },
+      }
+    }
+  />
+</div>
+`;

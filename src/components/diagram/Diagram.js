@@ -35,7 +35,7 @@ class Diagram extends Component {
   }
 
   componentDidMount() {
-    const { data } = this.props;
+    const { data = [] } = this.props;
     const dates = data.map(el => new Date(el.date));
     const minDate = new Date(Math.min(...dates));
     const maxDate = new Date(Math.max(...dates));
@@ -79,7 +79,7 @@ class Diagram extends Component {
 
     if (!selectionRange) return (<Loading />);
 
-    const { data } = this.props;
+    const { data = [] } = this.props;
     const { startDate, endDate } = selectionRange;
 
     const filteredData = data.filter(el => new Date(el.date) >= startDate && new Date(el.date) <= endDate);

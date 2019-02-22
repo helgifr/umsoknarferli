@@ -29,7 +29,7 @@ async function request(method, endpoint, data, file = false) {
     return {
       status: 500,
       result: {
-        errors: [{message: 'Villa við að sækja gögn'}]
+        errors: [{ message: 'Villa við að sækja gögn' }]
       }
     }
   }
